@@ -795,6 +795,15 @@ p {
   visibility: visible;
   transform: scale(1);
 }
+@media screen and (max-width: 991px) {
+  .header-wrapper .main-menu li {
+    padding: 4px 10px;
+  }
+  .header-wrapper .main-menu li a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 .header-wrapper .main-menu .cmn-grp {
   display: flex;
   align-items: center;
