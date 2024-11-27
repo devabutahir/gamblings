@@ -203,10 +203,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.4s;
     .biggest__left{
       display: flex;
       align-items: center;
       gap: 20px;
+      .icon{
+        transition: all 0.4s;
+      }
       .badge__winner{
         display: flex;
         align-items: center;
@@ -231,6 +235,14 @@
     }
     &:not(:last-child){
       margin-bottom: 30px;
+    }
+    &:hover{
+      background-color: #105034;
+      .biggest__left{
+        .icon{
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }
@@ -267,9 +279,20 @@
   .thumb{
     width: 100%;
     margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.4s;
+    border-radius: 14px;
     img{
       @include imgw;
       border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.4s;
+      border-radius: 14px;
+    }
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
     }
   }
   .tour__content{
@@ -737,6 +760,9 @@
         &:not(:last-child){
           margin-bottom: 30px;
         }
+        .phone-icon{
+          transition: all .3s ease-in-out;
+        }
         .thumb{
           width: 80px;
           height: 80px;
@@ -756,6 +782,11 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
+          }
+        }
+        &:hover{
+          .phone-icon{
+            transform: scale(1.05);
           }
         }
       }
@@ -793,6 +824,11 @@
         .modal__left__head{
           text-align: center;
           margin: 0 auto 0px;
+          h5{
+            img{
+              max-width: 120px;
+            }
+          }
           h3{
             color: var(--black-theme);
           }

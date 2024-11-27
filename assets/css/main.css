@@ -822,7 +822,7 @@ p {
   width: 280px;
   background: #156742;
   border-radius: 5px;
-  padding: 10px 0 13px 45px;
+  padding: 10px 10px 13px 45px;
   border: unset;
   outline: none;
 }
@@ -1349,11 +1349,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.4s;
 }
 .biggest__weekly .biggest__weekly__items .biggest__left {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.biggest__weekly .biggest__weekly__items .biggest__left .icon {
+  transition: all 0.4s;
 }
 .biggest__weekly .biggest__weekly__items .biggest__left .badge__winner {
   display: flex;
@@ -1376,6 +1380,12 @@ p {
 }
 .biggest__weekly .biggest__weekly__items:not(:last-child) {
   margin-bottom: 30px;
+}
+.biggest__weekly .biggest__weekly__items:hover {
+  background-color: #105034;
+}
+.biggest__weekly .biggest__weekly__items:hover .biggest__left .icon {
+  transform: scale(1.05);
 }
 
 .top__winner__items .biggest__weekly__items {
@@ -1408,11 +1418,20 @@ p {
 .tournaments__items .thumb {
   width: 100%;
   margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.4s;
+  border-radius: 14px;
 }
 .tournaments__items .thumb img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+  border-radius: 14px;
+}
+.tournaments__items .thumb:hover img {
+  transform: scale(1.05);
 }
 .tournaments__items .tour__content {
   display: flex;
@@ -1861,6 +1880,9 @@ p {
 .right__contact .contact li:not(:last-child) {
   margin-bottom: 30px;
 }
+.right__contact .contact li .phone-icon {
+  transition: all 0.3s ease-in-out;
+}
 .right__contact .contact li .thumb {
   width: 80px;
   height: 80px;
@@ -1880,6 +1902,9 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+.right__contact .contact li:hover .phone-icon {
+  transform: scale(1.05);
 }
 
 .register__modal {
@@ -1913,6 +1938,9 @@ p {
 .register__modal .modal-content .modal-body .modal__left .modal__left__head {
   text-align: center;
   margin: 0 auto 0px;
+}
+.register__modal .modal-content .modal-body .modal__left .modal__left__head h5 img {
+  max-width: 120px;
 }
 .register__modal .modal-content .modal-body .modal__left .modal__left__head h3 {
   color: var(--black-theme);

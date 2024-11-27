@@ -1,5 +1,18 @@
 "user strict";
 
+
+/* All Information
+0.1 main menu
+0.2 click even scroll bar
+0.3 Owl Carousel
+0.4 Magnific Popup
+0.5 Custom Sign In Password
+0.6 Wow Animation
+0.7 Nice Select
+0.8 Preloader
+
+*/
+
 $(document).ready(function () {
 	//menu header bar
 	$(".header-bar").on("click", function (e) {
@@ -130,13 +143,6 @@ $(document).ready(function () {
 		},
 	});
 
-
-
-
-
-
-
-
 	$(".battle__wrap").owlCarousel({
 		loop: true,
 		margin: 20,
@@ -245,8 +251,6 @@ $(document).ready(function () {
 			},
 		},
 	});
-
-
 
 	//Magnifiq pupup
 	$('.picture-btn').magnificPopup({
