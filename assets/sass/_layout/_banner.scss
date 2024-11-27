@@ -1,0 +1,292 @@
+//Banner Section Start
+.banner__section{
+    position: relative;
+    background: var(--banner-color);
+    padding-bottom: 10px;
+}
+
+.banner__left__wrap{
+    padding: 0 73px;
+    .owl-nav{
+        button.owl-prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)  matrix(-1, 0, 0, 1, 0, 0);
+            left: 0px;
+            line-height: 6px;
+            background: linear-gradient(89.6deg, #0F5638 -1.27%, #0A3422 103.74%);
+            border-radius: 0px 10px 10px 0px;
+            width: 67px;
+            text-align: center;
+            height: 220px;
+            transition: all 0.3s;
+            i{
+                font-size: 28px;
+                color: var(--white-color);
+                transition: all 0.3s;
+            }
+            &:hover{
+                background: linear-gradient(89.6deg, #0A3422 -1.27%, #0F5638 103.74%);
+              i{
+                background: linear-gradient(0deg, #FFCA10, #FFCA10), linear-gradient(95.82deg, #9BE15D 1.39%, #15A805 94.62%), linear-gradient(90.21deg, #C64AFF -16.32%, #8830FF 99.37%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+              }
+            }
+        }
+        button.owl-next{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            line-height: 6px;
+            background: linear-gradient(89.6deg, #0F5638 -1.27%, #0A3422 103.74%);
+            border-radius: 0px 10px 10px 0px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            width: 67px;
+            text-align: center;
+            height: 220px;
+            transition: all 0.3s;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+            i{
+                font-size: 28px;
+                color: var(--white-color);
+                transition: all 0.3s;
+            }
+            &:hover{
+                background: linear-gradient(89.6deg, #0A3422 -1.27%, #0F5638 103.74%);
+              i{
+                color: var(--white-color);
+              }
+            }
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        bottom: 120px;
+        left: 127px;
+        .owl-dot{
+            span{
+                background-color: #277353;
+                width: 12px;
+                height: 12px;
+            }
+            &.active{
+                span{
+                    background-color: var(--theme-color);
+                    width: 12px;
+                }
+            }
+        }
+    }
+}
+.banner__left__items{
+    background: url(../../assets/img/banner/banner.png) no-repeat right top;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 140px 60px 145px;
+    height: 100%;
+    position: relative;
+    &::before{
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        content: "";
+        background: rgba($color: #000000, $alpha: 0.4)
+    }.shape__thumb{
+        max-width: 500px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img{
+            @include imgw;
+            object-fit: contain;
+            border-radius: 0 0 20px 20px;
+        }
+    }
+}
+.banner__content{
+    position: relative;
+    z-index: 2;
+    h2{
+        margin-bottom: 10px;
+    }
+    h3{
+        margin-bottom: 10px;
+    }
+}
+//Banner Section End
+
+//Banner_jackpot Here
+.banner__jackpot{
+    background-color: var(--banner-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.banner__jackpot__left{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 10px;
+    background: linear-gradient(89.6deg, #0A3422 -1.27%, #0F5638 103.74%);
+    border-radius: 20px;
+    span{
+        color: var(--white-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    h5{
+        display: flex;
+        align-items: center;
+
+        span{
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+}
+.banner__jackpot__items{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 18px;
+    gap: 10px;
+    background: linear-gradient(#35082B, #35082B) padding-box, linear-gradient(to right, #EF2D62, #FF6392) border-box;
+    border-radius: 1.5em;
+    border: 4px solid transparent;
+    position: relative;
+    &::before{
+        position: absolute;
+        inset: 0;
+        content: "";
+        border-radius: 20px;
+        background: linear-gradient(180deg, #0C4E31 0%, #176C46 100%);
+    }
+    .content{
+        h5{
+            display: flex;
+            align-items: center;
+    
+            span{
+                font-size: 24px;
+                line-height: 31px;
+                font-weight: 700;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+    span{
+        color: var(--white-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+    }
+    .thumb{
+        position: relative;
+    }
+    h5{
+        position: relative;
+    }
+}
+.banner__jackpot__items2{
+    background: linear-gradient(#35082B, #35082B) padding-box, linear-gradient(to right, #FBAD45, #FBAD45) border-box;
+    border-radius: 1.5em;
+    border: 4px solid transparent;
+}
+.banner__jackpot__items3{
+    background: linear-gradient(#35082B, #35082B) padding-box, linear-gradient(to right, #58F5BE, #41DE98) border-box;
+    border-radius: 1.5em;
+    border: 4px solid transparent;
+}
+//Banner_jackpot End
+
+//Banner Tab Here
+.banner__tab__feature{
+    background-color: var(--banner-color);
+    padding-bottom: 20px;
+}
+.banner__tab__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    .banner__tab__items{
+        width: calc(100% / 5);
+    }
+    @media screen and (max-width: 1199px) {
+        .banner__tab__items{
+            width: calc(100% / 4);
+        } 
+    }
+    @media screen and (max-width: 767px) {
+        .banner__tab__items{
+            width: calc(100% / 3);
+        } 
+    }
+    @media screen and (max-width: 500px) {
+        .banner__tab__items{
+            width: calc(100% / 1);
+        } 
+    }
+}
+.banner__tab__items{
+    background: var(--banner-color);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: block;
+    width: 171px;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s;
+    &::before{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0px;
+        height: 0px;
+        content: "";
+        background: var(--tab-hov);
+        transition: all 0.4s;
+        border-radius: 8px;
+    }
+    .icon{
+        position: relative;
+        display: block;
+        i{
+            color: var(--tab-color);
+            font-size: 55px;
+            transition: all 0.4s;
+        }
+    }
+    span{
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--tab-color);
+        transition: all 0.4s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            height: 100%;
+        }
+        border-color: var(--tab-hov);
+        .icon{
+            i{
+                color: var(--banner-color);
+            }
+        }
+        span{
+            color: var(--banner-color);
+        }
+    }
+}
+//Banner Tab End
